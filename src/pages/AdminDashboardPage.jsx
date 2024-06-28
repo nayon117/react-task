@@ -75,7 +75,7 @@ const App = () => {
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-xl md:text-2xl font-bold">Today's leaderboard</h1>
         <div className="flex items-center space-x-4">
-          <span>30 May 2022</span>
+          <span className="text-xs">30 May 2022</span>
           <button className="bg-[#9BFF00] text-black px-4 py-2 rounded text-xs">
             Submissions Open
           </button>
@@ -106,7 +106,7 @@ const App = () => {
                       alt={item.title}
                       className="w-12 h-12 mr-4 rounded"
                     />
-                    {item.title}
+                    <span className="max-w-xs truncate">{item.title}</span>
                   </td>
                   <td className="px-4 py-2">{item.author}</td>
                   <td className="px-4 py-2">{item.likes}</td>
