@@ -29,7 +29,7 @@ function renderRoutes(role) {
         <Routes>
           <Route exact path="/admin/login" element={<AdminLoginPage />}></Route>
 
-          <Route path="*" element={<AdminDashboardPage/>}></Route>
+          <Route path="*" exact element={<AdminDashboardPage />}></Route>
         </Routes>
       );
       break;
